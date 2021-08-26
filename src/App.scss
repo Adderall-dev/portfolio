@@ -1,0 +1,35 @@
+@use "theming/palette";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: palette.get(dark);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.button {
+  display: flex;
+  color: white;
+  background-color: palette.get(primary);
+  outline: none;
+  border: 3px solid palette.get(primary);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: background-color 0.5s ease;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+  }
+}

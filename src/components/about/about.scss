@@ -1,0 +1,22 @@
+@use "theming/palette";
+
+.about {
+  display: flex;
+  height: 900px;
+  flex-direction: row;
+  position: relative;
+  top: -80px;
+
+  .left {
+    background-color: palette.get(primary);
+    width: 100%;
+    height: 100%;
+  }
+  .right {
+    background-color: palette.get(dark);
+    width: 100%;
+    height: 100%;
+    color: palette.get(light);
+    padding: 2rem;
+  }
+}

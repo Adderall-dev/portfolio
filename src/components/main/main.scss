@@ -1,0 +1,69 @@
+@use "theming/palette";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1100px;
+  color: palette.get(light);
+  overflow-x: hidden;
+
+  .video-overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: palette.get(dark);
+    z-index: -1;
+    opacity: 0.8;
+    overflow-x: hidden;
+  }
+
+  .video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+    video {
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  .content {
+    z-index: 0;
+    text-align: center;
+    color: palette.get(light);
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .icon {
+    position: relative;
+    top: 200px;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
