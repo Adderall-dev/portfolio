@@ -2,13 +2,13 @@
 
 .about {
   display: flex;
-  height: 900px;
+  height: 1000px;
   flex-direction: row;
-  position: relative;
-  top: -80px;
 
   .left {
-    background-color: palette.get(primary);
+    background: url("../../assets/photos/about-photo.jpg");
+    background-size: cover;
+    opacity: 0.4;
     width: 100%;
     height: 100%;
   }
@@ -16,6 +16,10 @@
     background-color: palette.get(dark);
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: palette.get(light);
     padding: 2rem;
   }

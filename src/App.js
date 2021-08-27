@@ -1,4 +1,5 @@
 import "./App.scss";
+import React, { useRef, useEffect } from "react";
 import NavBar from "components/navbar";
 import Main from "components/main";
 import About from "components/about";
@@ -7,14 +8,26 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-function App() {
+const App = () => {
+  const about = useRef(null);
+
+  useEffect(() => {
+    console.log(about);
+  }, [about]);
+
   return (
     <div className="App">
-      <NavBar />
-      <Main />
-      <About />
+      <div>
+        <NavBar aboutRef={about} />
+      </div>
+      <div>
+        <Main />
+      </div>
+      <div ref={about}>
+        <About />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
