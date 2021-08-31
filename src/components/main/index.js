@@ -1,6 +1,6 @@
 import React from "react";
 import "./main.scss";
-import video from "assets/videos/video.mp4";
+import video from "assets/videos/test.mp4";
 import { FiChevronsDown } from "react-icons/fi";
 
 const Main = () => {

@@ -4,14 +4,28 @@
   display: flex;
   height: 1000px;
   flex-direction: row;
+  font-size: 1.3rem;
+  text-align: center;
 
   .left {
     background: url("../../assets/photos/about-photo.jpg");
     background-size: cover;
-    opacity: 0.4;
+    opacity: 0.3;
     width: 100%;
     height: 100%;
+
+    &::after {
+      content: "ABOUT";
+      position: relative;
+      top: 30%;
+      left: 105%;
+      font-size: 150px;
+      font-weight: bold;
+      color: palette.get(neutral);
+      opacity: 0.3;
+    }
   }
+
   .right {
     background-color: palette.get(dark);
     width: 100%;
@@ -22,5 +36,40 @@
     justify-content: center;
     color: palette.get(light);
     padding: 2rem;
+
+    h1 {
+      color: palette.get(primary);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    height: 100vh;
+
+    .left {
+      position: relative;
+      top: 90px;
+      left: 0;
+
+      &::after {
+        content: "ABOUT";
+        position: relative;
+        top: 75%;
+        left: 0;
+        font-size: 150px;
+        font-weight: bold;
+        color: palette.get(primary);
+        opacity: 1;
+      }
+    }
+
+    .right {
+      width: 80%;
+    }
   }
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./navbar.scss";
 import { FiGithub } from "react-icons/fi";
 
-const NavBar = ({ aboutRef }) => {
+const NavBar = ({ aboutRef, projectsRef }) => {
   const [background, setBackground] = useState(false);
 
   const changeNavBackgroundColor = () => {
@@ -13,7 +13,7 @@ const NavBar = ({ aboutRef }) => {
     }
   };
 
-  const scrollToAbout = (ref) => {
+  const scrollTo = (ref) => {
     if (ref) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -37,8 +37,8 @@ const NavBar = ({ aboutRef }) => {
       </div>
       <div className="links" data-aos="fade-down" data-aos-duration="1200">
         <ul>
-          <li onClick={() => scrollToAbout(aboutRef)}>About</li>
-          <li>Projects</li>
+          <li onClick={() => scrollTo(aboutRef)}>About</li>
+          <li onClick={() => scrollTo(projectsRef)}>Projects</li>
         </ul>
       </div>
       <a

@@ -15,18 +15,21 @@ code {
     monospace;
 }
 
+.pt {
+  padding-top: 50px;
+}
+
 .button {
   display: flex;
   color: white;
   background-color: palette.get(primary);
-  outline: none;
   border: 3px solid palette.get(primary);
   padding: 1rem 2rem;
   border-radius: 10px;
   font-size: 1rem;
-  transition: background-color 0.5s ease;
   align-items: center;
   text-decoration: none;
+  transition: background-color 1s ease;
 
   &:hover {
     cursor: pointer;
