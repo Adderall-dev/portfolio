@@ -10,17 +10,13 @@ const About = () => {
           About
         </h1>
         <p data-aos="fade-down" data-aos-duration="1400" data-aos-delay="500">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil id
-          quae odio blanditiis earum, nisi ipsa reiciendis non minima ullam
-          veniam, ratione libero eum alias, temporibus a culpa tenetur at iste
-          rerum deleniti quidem accusantium totam exercitationem. Excepturi
-          explicabo omnis corporis voluptatem quos animi saepe fuga ut soluta,
-          unde earum est beatae ipsa enim atque quasi expedita mollitia, optio
-          provident laborum ullam! Commodi unde aliquid iste et inventore
-          libero, cupiditate voluptatibus deleniti enim tempora officia sit
-          sint, corporis id! Commodi fuga repudiandae laboriosam tenetur
-          impedit, placeat voluptas dolore autem quasi similique maiores
-          voluptatum rerum aliquam libero veniam voluptates incidunt dicta.
+          Hello, my name is Edwin Urbaniak, I am currently working as a
+          Front-end engineer at the barking dog entertainment, programming is my
+          passion, which gives me great pleasure, I like to learn new things, I
+          have over a year of experience on the frontend field, my favorite
+          technology is React, I also like to use Typescript, GraphQL, recently
+          I even started to like the backend, hence the desire to master Elixir
+          and Phoenix as best as possible.
         </p>
       </div>
     </div>
