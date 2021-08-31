@@ -11,12 +11,12 @@ const Main = () => {
           Hi, I'm Edwin
         </h1>
         <p data-aos="fade-down" data-aos-duration="1400">
-          Front-end Developer
+          Front-end Engineer
         </p>
       </div>
       <div className="video-overlay"></div>
       <div className="video-wrapper">
-        <video src={video} autoPlay loop muted></video>
+        <video src={video} autoPlay playsinline loop muted></video>
       </div>
       <div data-aos="fade-up" className="icon">
         <FiChevronsDown size={50} />

@@ -1,5 +1,7 @@
 @use "theming/palette";
 
+$nav-padding: 20px 0;
+
 .button {
   display: flex;
   color: white;
@@ -10,6 +12,7 @@
   font-size: 1rem;
   align-items: center;
   text-decoration: none;
+  justify-content: center;
   transition: background-color 1s ease;
 
   &:hover {
@@ -18,7 +21,78 @@
   }
 }
 
-.navbar {
+.dnone {
+  display: none !important;
+}
+
+.bgcolor {
+  background-color: palette.get(primary);
+}
+
+.navbar-mobile {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: palette.get(light);
+  background: palette.get(primary);
+  z-index: 1;
+  -webkit-box-shadow: 0px 11px 19px 0px palette.get(dark);
+  box-shadow: 0px 11px 19px 0px palette.get(dark);
+
+  .links-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 60%;
+
+      li {
+        background-color: palette.get(primary);
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1;
+    height: 100vh;
+    overflow: hidden;
+
+    .hamburger {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .logo {
+    padding: $nav-padding;
+    font-size: 1.5rem;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    padding: $nav-padding;
+  }
+}
+
+.navbar-desktop {
   color: palette.get(light);
   background-color: transparent;
   display: flex;
@@ -55,9 +129,23 @@
   }
 }
 
-.navbar-dark {
-  @extend .navbar;
+.navbar-dark-desktop {
+  @extend .navbar-desktop;
   background-color: palette.get(dark);
   box-shadow: 0px 13px 20px 2px palette.get(secondary);
   transition: all 1s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-desktop {
+    display: none;
+  }
+
+  .navbar-dark-desktop {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+  }
 }

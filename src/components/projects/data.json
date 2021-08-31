@@ -1,32 +1,37 @@
 [
   {
-    "name": "Project1",
-    "description": "This is a test project",
-    "link": "localhost:3000"
+    "name": "Med API",
+    "description": "Basic Elixir API",
+    "github": "https://github.com/Adderall-dev/med_api"
   },
   {
-    "name": "Project1",
-    "description": "This is a test project",
-    "link": "localhost:3000"
+    "name": "Weather App",
+    "description": "Weather app created with react and OpenWeatherApi",
+    "github": "https://github.com/Adderall-dev/weatherapp",
+    "link": "https://adderall-weather-now.netlify.app/"
   },
   {
-    "name": "Project1",
-    "description": "This is a test project",
-    "link": "localhost:3000"
+    "name": "Shop / Ecommerce",
+    "description": "This is a simple shop app that allows you to order food for pick up.",
+    "github": "https://github.com/Adderall-dev/ecommerce",
+    "link": "https://adderall-shop.netlify.app/"
   },
   {
-    "name": "Project1",
-    "description": "This is a test project",
-    "link": "localhost:3000"
+    "name": "Rock Paper Scissors",
+    "description": "Basic Rock Paper Scissors game created with React.js",
+    "github": "https://github.com/Adderall-dev/rock-paper-scissors-react",
+    "link": "https://adderall-rps.netlify.app/"
   },
   {
-    "name": "Project1",
-    "description": "This is a test project",
-    "link": "localhost:3000"
+    "name": "Rick & Morty Search",
+    "description": "simple vue app that lets you look at Rick&Morty characters",
+    "github": "https://github.com/Adderall-dev/rm-searcher",
+    "link": "https://rm-searcher.netlify.app/"
   },
   {
-    "name": "Project1",
-    "description": "This is a test project",
-    "link": "localhost:3000"
+    "name": "Crypto.now",
+    "description": "Cryptocurrency app powered by coinranking API",
+    "github": "https://github.com/Adderall-dev/crypto-now",
+    "link": "https://crypto-now.netlify.app/"
   }
 ]
