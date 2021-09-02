@@ -6,6 +6,7 @@ import { VscClose } from "react-icons/vsc";
 import { AiFillInfoCircle } from "react-icons/ai";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { AiOutlineHome } from "react-icons/ai";
+import resume from "assets/resume.pdf";
 
 const NavBar = ({ aboutRef, projectsRef }) => {
   const [background, setBackground] = useState(false);
@@ -60,16 +61,28 @@ const NavBar = ({ aboutRef, projectsRef }) => {
             <li onClick={() => scrollTo(projectsRef)}>Projects</li>
           </ul>
         </div>
-        <a
-          data-aos="fade-down"
-          data-aos-duration="1300"
-          href="https://github.com/Adderall-dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="button"
-        >
-          GitHub &nbsp; <FiGithub />
-        </a>
+        <div className="nav-buttons">
+          <a
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            href="https://github.com/Adderall-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button"
+          >
+            GitHub &nbsp; <FiGithub />
+          </a>
+          <a
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button"
+          >
+            CV
+          </a>
+        </div>
       </nav>
 
       {/* Mobile Navbar */}
@@ -111,6 +124,17 @@ const NavBar = ({ aboutRef, projectsRef }) => {
               style={{ backgroundColor: "transparent" }}
             >
               GitHub &nbsp; <FiGithub />
+            </a>
+            <a
+              data-aos="fade-down"
+              data-aos-duration="1300"
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button"
+              style={{ backgroundColor: "transparent" }}
+            >
+              CV
             </a>
           </ul>
         </div>
