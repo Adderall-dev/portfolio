@@ -68,3 +68,12 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .main {
+    .icon {
+      position: relative;
+      top: 100px;
+    }
+  }
+}

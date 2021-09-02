@@ -12,7 +12,7 @@ const Projects = () => {
       <div className="projects">
         {projectData.map(({ name, description, link, github }, index) => {
           return (
-            <div className="card">
+            <div className="card" key={index}>
               <div className="preview">
                 <h2>{name}</h2>
               </div>
