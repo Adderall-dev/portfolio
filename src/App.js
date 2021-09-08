@@ -20,18 +20,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <div>
-        <NavBar aboutRef={about} projectsRef={projects} />
-      </div>
-      <div>
-        <Main />
-      </div>
-      <div ref={about}>
-        <About />
-      </div>
-      <div className="pt" ref={projects}>
-        <Projects />
-      </div>
+      <NavBar aboutRef={about} projectsRef={projects} />
+      <Main />
+      <About ref={about} />
+      <Projects ref={projects} />
       <Footer />
     </div>
   );

@@ -1,15 +1,15 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./about.scss";
 
-const About = () => {
+const About = forwardRef((_, ref) => {
   return (
-    <div className="about">
-      <div className="left"></div>
+    <div className="about" ref={ref}>
+      <div className="left" />
       <div className="right">
         <h1 data-aos="fade-right" data-aos-duration="1400">
           About
         </h1>
-        <p data-aos="fade-down" data-aos-duration="1400" data-aos-delay="500">
+        <p data-aos="fade-down" data-aos-duration="1400" data-aos-delay="200">
           Hello, my name is Edwin Urbaniak, I am currently working as a
           Front-end engineer at the barking dog entertainment, programming is my
           passion, which gives me great pleasure, I like to learn new things, I
@@ -21,6 +21,6 @@ const About = () => {
       </div>
     </div>
   );
-};
+});
 
 export default About;

@@ -1,15 +1,17 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./projects.scss";
 import projectData from "./data.json";
 import { AiOutlineGithub } from "react-icons/ai";
 
-const Projects = () => {
+const Projects = forwardRef((_, ref) => {
   return (
-    <div className="projects-wrapper">
+    <div className="projects-wrapper" ref={ref}>
       <div className="title">
-        <h1>PROJECTS</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1200">
+          PROJECTS
+        </h1>
       </div>
-      <div className="projects">
+      <div className="projects" data-aos="fade-right" data-aos-duration="1500">
         {projectData.map(({ name, description, link, github }, index) => {
           return (
             <div className="card" key={index}>
@@ -34,6 +36,6 @@ const Projects = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Projects;

@@ -1,5 +1,9 @@
 @use "theming/palette";
 
+.projects-wrapper {
+  padding-top: 50px;
+}
+
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
