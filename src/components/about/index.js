@@ -11,7 +11,7 @@ const About = forwardRef((_, ref) => {
         </h1>
         <p data-aos="fade-down" data-aos-duration="1400" data-aos-delay="200">
           Hello, my name is Edwin Urbaniak, I am currently working as a
-          Front-end engineer at the barking dog entertainment, programming is my
+          React Developer at Solteq Plc, programming is my
           passion, which gives me great pleasure, I like to learn new things, I
           have over a year of experience on the frontend field, my favorite
           technology is React, I also like to use Typescript, GraphQL, recently
